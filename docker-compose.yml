@@ -1,0 +1,9 @@
+version: '3'
+services:
+  test-environment:
+    image: ghcr.io/01-edu/test-java
+    environment:
+      - EXERCISE=${EXERCISE}
+    container_name: test-java
+    volumes:
+      - .:/app/student
